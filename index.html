@@ -19,42 +19,101 @@
 
 <body>
   <header class="header border">
-    <div class="container header-container">
-      <nav class="header-navigation">
-        <a href="index.html" class="headr-logo link">
-          <span class="web">Web</span>studio</a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="headr-link link current" href="./index.html">Studio</a>
+    <section class="header-container">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="index.html" class="headr-logo link">
+            <span class="web">Web</span>studio</a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="headr-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="header-item">
+              <a class="headr-link link open" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="headr-link link open" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="mobile-menu-button"><svg width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg></button>
+        <ul class="header-exile list">
+          <li>
+            <a class="header-mail link" href="info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="header-item">
-            <a class="headr-link link open" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a class="headr-link link open" href="">Contacts</a>
+          <li>
+            <a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-exile list">
+      </div>
+    </section>
+    <div class="mobile-menu">
+      <button type="button" class="modal-close-button-menu" data-modal-close>
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></button>
+      <ul>
         <li>
-          <a class="header-mail link" href="info@devstudio.com">info@devstudio.com</a>
+          <a href="./index.html">Studio</a>
         </li>
         <li>
-          <a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="">Contacts</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href=""><svg width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
   </header>
   <main>
     <section class="section-first">
-      <div class="container">
+      <!-- <div class="container">
         <h1 class="main-first">Effective Solutions for Your Business</h1>
         <button type="button" class="button-order" data-modal-open>
           Order Service
         </button>
       </div>
-    </section>
-    <section class="section-advantages">
+    </section>-->
+      <!--<section class="section-advantages">
       <div class="container">
         <h2 class="advantages">Advantages</h2>
         <ul class="main-advantages list">
@@ -108,8 +167,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="main-two-section">
+    </section>-->
+      <!--<section class="main-two-section">
       <div class="container">
         <h2 class="maim-two">What are we doing</h2>
         <ul class="main-photo list">
@@ -120,8 +179,8 @@
           <li><img src="./images/phone.jpg" alt="phone" width="360" /></li>
         </ul>
       </div>
-    </section>
-    <section class="main-work">
+    </section>-->
+      <!-- <section class="main-work">
       <div class="container">
         <h2 class="maim-two">Our Team</h2>
         <ul class="main-people list">
@@ -272,8 +331,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="section-company">
+    </section>-->
+      <!-- <section class="section-company">
       <div class="container">
         <h2 class="maim-two">Customers</h2>
         <ul class="company list">
@@ -309,9 +368,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section>-->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="div-container">
         <a href="/index.html" class="footer-logo link">
@@ -362,8 +421,8 @@
         </form>
       </div>
     </div>
-  </footer>
-  <div class="backdrob is-hidden" data-modal>
+  </footer>-->
+  <!-- <div class="backdrob is-hidden" data-modal>
     <div class="modal-window">
       <button type="button" class="modal-close-button" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
@@ -413,6 +472,6 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-</body>
+</body>-->
 
 </html>
