@@ -6,7 +6,7 @@
   --font-famili-raw: "Raleway";
   --gren-text--: #434455;
   --blue-text--: #4d5ae5;
-} /*
+}
 p,
 h1,
 h2,
@@ -36,7 +36,7 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}*/
+}
 
 .list {
   list-style: none;
@@ -61,13 +61,82 @@ body {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .advantages-soc-icon {
+    display: none;
+  }
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-advantages {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-two-section {
+    display: none;
+  }
+  .main-people {
+    display: flex;
+    flex-direction: column;
+  }
+  .border-people {
+    width: 100%;
+    align-items: center;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .company-svg {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
 @media screen and (min-width: 767px) {
   .container {
-    width: 766px;
+    width: 768px;
   }
   .mobile-menu-button {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
+  .advantages-soc-icon {
+    display: none;
+  }
+  .main-advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 72px 24px;
+  }
+  .icon-vector {
+    width: calc((100% - 24px) / 2);
+  }
+  .main-two-section {
+    display: none;
+  }
+  .main-people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 64px 24px;
+  }
+  .border-people {
+    width: calc((100% - 24px) / 2);
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*.company-svg {
+    width: calc((100% - 24px) / 3);
+  }*/
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -203,7 +272,7 @@ body {
 }
 /*---------------мобільне меню-------------------*/
 
-/*.header {
+.header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -211,7 +280,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}*/
+}
 .headr-logo {
   font-family: var(--font-famili-raw);
   font-style: normal;
@@ -238,13 +307,12 @@ body {
 }
 /*---------навігація------*/
 
-/*.header-list {
+.header-list {
   display: flex;
   align-items: center;
   gap: 40px;
-}*/
+}
 
-/*
 .header-item:not-last-child {
   margin-right: 40px;
 }
@@ -314,7 +382,7 @@ body {
   color: var(--blue-text--);
 }
 /*---------контакти------*/
-/*.header-exile :hover {
+.header-exile :hover {
   color: var(--blue-text--);
 }
 .header-exile :focus {
@@ -340,17 +408,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--gren-text--);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
-/*
+}
 .header-mail {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--gren-text--);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
+}
+*/
 
-/*---------заголовок+кнопка------*/
-/*.section-first {
+/*---------заголовок+кнопка+фонове зображення------*/
+.section-first {
   background-color: #2e2f42;
   padding: 188px 0px;
   text-align: center;
@@ -358,6 +426,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -366,7 +435,66 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@media screen and (min-width: 480px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice1.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice1.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice2.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice.jpg);
+  }
+}
 .main-first {
   font-weight: 700;
   font-size: 56px;
@@ -407,8 +535,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+/*---------заголовок+кнопка+фонове зображення------*/
 /*---------стратегія------*/
-/*.advantages {
+.advantages {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -446,8 +575,9 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/*---------стратегія------*/
 /*----------що ми робимо------*/
-/*.main-two-section {
+.main-two-section {
   padding-bottom: 120px;
 }
 .maim-two {
@@ -468,8 +598,9 @@ body {
   background-color: #f4f4fd;
   padding: 120px 0px;
 }
+/*----------що ми робимо------*/
 /*---------наші спеціалісти------*/
-/*.maim-team {
+.maim-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -536,8 +667,9 @@ body {
 .people-soc-link:focus {
   background-color: #404bbf;
 }
+/*---------наші спеціалісти------*/
 /*--------посилання на компанії-------*/
-/*.section-company {
+.section-company {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -665,7 +797,7 @@ body {
 }
 
 /*---------підвал------*/
-/*.footer {
+.footer {
   background-color: var(--black-text--);
   padding-top: 100px;
   padding-bottom: 100px;
