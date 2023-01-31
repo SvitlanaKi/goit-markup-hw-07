@@ -7,6 +7,41 @@
   --gren-text--: #434455;
   --blue-text--: #4d5ae5;
 }
+
+/*.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}*/
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 p,
 h1,
 h2,
@@ -44,125 +79,44 @@ body {
 .link {
   text-decoration: none;
 }
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 426px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .advantages-soc-icon {
-    display: none;
-  }
-  .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-advantages {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-two-section {
-    display: none;
-  }
-  .main-people {
-    display: flex;
-    flex-direction: column;
-  }
-  .border-people {
-    width: 100%;
-    align-items: center;
-  }
-  .company {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .company-svg {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-  }
-}
-@media screen and (min-width: 767px) {
-  .container {
-    width: 768px;
-  }
-  .mobile-menu-button {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .advantages-soc-icon {
-    display: none;
-  }
-  .main-advantages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 72px 24px;
-  }
-  .icon-vector {
-    width: calc((100% - 24px) / 2);
-  }
-  .main-two-section {
-    display: none;
-  }
-  .main-people {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 64px 24px;
-  }
-  .border-people {
-    width: calc((100% - 24px) / 2);
-  }
-  .company {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-  .header-tel {
-    display: none;
-  }
-  .header-mail {
-    display: none;
-  }
-  .mobile-menu-button {
-    margin-left: 250px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-  }
-}
+
 /*------------------мобільне меню--------------*/
-.modal-close-button-menu {
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  padding: 16px 24px;
+}
+.mobile-menu-button {
+  margin-left: 150px;
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+}
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-close-button-menu {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 40px;
+  right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,26 +203,13 @@ body {
 .mobile-people-icon:hover {
   background-color: rgba(64, 75, 191, 1);
 }
-.mobile-menu {
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 767px) {
+  .mobile-menu-button {
+    display: none;
+  }
 }
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-/*---------------мобільне меню-------------------*/
 
+/*---------------мобільне меню-------------------*/
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -277,6 +218,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+@media screen and (max-width: 480px) {
+  .header-navigation {
+    display: none;
+  }
 }
 .headr-logo {
   font-family: var(--font-famili-raw);
@@ -309,7 +255,6 @@ body {
   align-items: center;
   gap: 40px;
 }
-
 .header-item:not-last-child {
   margin-right: 40px;
 }
@@ -390,7 +335,7 @@ body {
   margin-right: 5px;
 }
 .header-exile {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   margin-left: auto;
   gap: 40px;
@@ -412,8 +357,19 @@ body {
   color: var(--gren-text--);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-*/
-
+@media screen and (max-width: 480px) {
+  .header-tel {
+    display: none;
+  }
+  .header-mail {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-exile {
+    display: flex;
+  }
+}
 /*---------заголовок+кнопка+фонове зображення------*/
 .section-first {
   background-color: #2e2f42;
@@ -432,8 +388,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-first {
+    padding: 112px;
+    width: 480px;
+    height: 432px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -452,7 +411,7 @@ body {
       url(../images/peopleoffice1.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .section-first {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -472,7 +431,7 @@ body {
       url(../images/peopleoffice2.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .section-first {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -502,6 +461,15 @@ body {
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
+}
+@media screen and (max-width: 480px) {
+  .main-first {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    width: 318px;
+    margin-bottom: 72px;
+  }
 }
 
 .button-order {
@@ -550,7 +518,7 @@ body {
   padding: 120px 0px;
 }
 .main-advantages {
-  display: flex;
+  /*display: flex;*/
   gap: 24px;
 }
 .advantages-soc-icon {
@@ -567,10 +535,52 @@ body {
   color: var(--black-text--);
   margin-bottom: 8px;
 }
+@media screen and (max-width: 480px) {
+  .main-index {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+}
 .main-sketchy {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+@media screen and (max-width: 480px) {
+  .advantages-soc-icon {
+    display: none;
+  }
+  .main-advantages {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .main-sketchy {
+    margin-bottom: 72px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages-soc-icon {
+    display: none;
+  }
+  .main-index {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  .main-advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icon-vector {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-advantages {
+    display: flex;
+  }
 }
 /*---------стратегія------*/
 /*----------що ми робимо------*/
@@ -594,6 +604,16 @@ body {
 .main-work {
   background-color: #f4f4fd;
   padding: 120px 0px;
+}
+@media screen and (max-width: 480px) {
+  .main-two-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-two-section {
+    display: none;
+  }
 }
 /*----------що ми робимо------*/
 /*---------наші спеціалісти------*/
@@ -664,6 +684,26 @@ body {
 .people-soc-link:focus {
   background-color: #404bbf;
 }
+@media screen and (max-width: 480px) {
+  .main-people {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 82px;
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-people {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px) / 2);
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*---------наші спеціалісти------*/
 /*--------посилання на компанії-------*/
 .section-company {
@@ -673,6 +713,26 @@ body {
 .company {
   display: flex;
   gap: 24px;
+}
+@media screen and (max-width: 480px) {
+  .company {
+    display: flex;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 16px) / 3);
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px) / 3);
+    justify-content: center;
+    align-items: center;
+  }
 }
 .company-href {
   color: #8e8f99;
@@ -800,9 +860,10 @@ body {
   padding-bottom: 100px;
 }
 .footer .container {
-  display: flex;
+  /*display: flex;*/
   align-items: baseline;
 }
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -928,6 +989,47 @@ body {
   transform: translateY(-50%);
   margin-right: 10px;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
+  .footer-input {
+    width: 100%;
+  }
+  .div-container {
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+  }
+  .footer-floor {
+    margin-bottom: 72px;
+  }
+  .social {
+    margin-bottom: 16px;
+  }
+  .footer-soc {
+    margin-bottom: 72px;
+  }
+  .footer-submit {
+    margin-top: 16px;
+  }
+  .footer-input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+  }
+  .div-container {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .container {
+    display: flex;
+  }
+}
 /*------------Modal-----------*/
 .backdrob {
   position: fixed;
@@ -955,6 +1057,14 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fcfcfc;
   padding: 72px 24px 24px;
+}
+@media screen and (max-width: 480px) {
+  .modal-window {
+    width: 392px;
+    height: 586px;
+    left: 18px;
+    top: 96px;
+  }
 }
 .modal-close-button {
   position: absolute;

@@ -19,39 +19,37 @@
 
 <body>
   <header class="header border">
-    <section class="header-container">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="index.html" class="headr-logo link">
-            <span class="web">Web</span>studio</a>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="headr-link link current" href="./index.html">Studio</a>
-            </li>
-            <li class="header-item">
-              <a class="headr-link link open" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a class="headr-link link open" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="mobile-menu-button js-open-menu"><svg width="32" height="22">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg></button>
-        <ul class="header-exile list">
-          <li>
-            <a class="header-mail link" href="info@devstudio.com">info@devstudio.com</a>
+    <div class="container header-container">
+      <a href="index.html" class="headr-logo link">
+        <span class="web">Web</span>studio</a>
+      <nav class="header-navigation">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="headr-link link current" href="./index.html">Studio</a>
           </li>
-          <li>
-            <a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="header-item">
+            <a class="headr-link link open" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="header-item">
+            <a class="headr-link link open" href="">Contacts</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </nav>
+      <button type="button" class="mobile-menu-button js-open-menu"><svg width="32" height="22">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg></button>
+      <ul class="header-exile list">
+        <li>
+          <a class="header-mail link" href="info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </div>
     <div class="mobile-menu js-menu-container">
       <div class="container mobile-menu-container">
-        <button type="button" class="modal-close-button-menu js-close-menu">
+        <button type="button" class="mobile-close-button-menu js-close-menu">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg></button>
@@ -189,7 +187,8 @@
         <h2 class="maim-two">Our Team</h2>
         <ul class="main-people list">
           <li class="border-people">
-            <img src="./images/Mark.jpg" alt="Mark Guerrero" width="264" />
+            <img class="images-people" srcset="./images/Mark-mobile.jpg 1x, ./images/Mark-tablet.jpg 2x"
+              src="./images/Mark.jpg" alt="Mark Guerrero" width="264" />
             <div class="name-proffesion">
               <h3 class="main-name">Mark Guerrero</h3>
               <p class="main-profession">Product Designer</p>
@@ -225,7 +224,8 @@
             </div>
           </li>
           <li class="border-people">
-            <img src="./images/Tom.jpg" alt="Tom Ford" width="264" />
+            <img class="images-people" srcset="./images/Tom-mobile.jpg 1x, ./images/Tom-tablet.jpg 2x"
+              src="./images/Tom.jpg" alt="Tom Ford" width="264" />
             <div class="name-proffesion">
               <h3 class="main-name">Tom Ford</h3>
               <p class="main-profession">Frontend Developer</p>
@@ -261,7 +261,8 @@
             </div>
           </li>
           <li class="border-people">
-            <img src="./images/Camila.jpg" alt="Camila Garcia" width="264" />
+            <img class="images-people" srcset="./images/Camila-mobile.jpg 1x, ./images/Camila-tablet.jpg 2x"
+              src="./images/Camila.jpg" alt="Camila Garcia" width="264" />
             <div class="name-proffesion">
               <h3 class="main-name">Camila Garcia</h3>
               <p class="main-profession">Marketing</p>
@@ -298,7 +299,8 @@
             </div>
           </li>
           <li class="border-people">
-            <img src="./images/Daniel.jpg" alt="Daniel Wilson" width="264" />
+            <img class="images-people" srcset="./images/Daniel-mobile.jpg 1x, ./images/Daniel-tablet.jpg 2x"
+              src="./images/Daniel.jpg" alt="Daniel Wilson" width="264" />
             <div class="name-proffesion">
               <h3 class="main-name">Daniel Wilson</h3>
               <p class="main-profession">UI Designer</p>
@@ -335,7 +337,7 @@
           </li>
         </ul>
       </div>
-    </section>-->
+    </section>
     <section class="section-company">
       <div class="container">
         <h2 class="maim-two">Customers</h2>
