@@ -21,7 +21,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   .container {
     width: 428px;
   }
@@ -33,14 +33,20 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1157px) {
   .container {
-    width: 1200px;
+    width: 1158px;
   }
 }
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 1157px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 p,
 h1,
@@ -82,14 +88,13 @@ body {
 
 /*------------------мобільне меню--------------*/
 .header-container {
-  display: flex;
+  /*display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
-  padding: 16px 24px;
+  padding: 0;*/
 }
 .mobile-menu-button {
-  margin-left: 150px;
+  margin-left: auto;
   background-color: transparent;
   border: none;
   line-height: 0;
@@ -238,14 +243,6 @@ body {
 }
 /*---------логотип------*/
 .web {
-  font-family: var(--font-famili-raw);
-  font-style: normal;
-  font-weight: var(--big-font--);
-  font-size: 18px;
-  line-height: 1.33;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--blue-text--);
 }
 /*---------навігація------*/
@@ -260,7 +257,7 @@ body {
 }
 .header-container {
   display: flex;
-  text-align: center;
+  /*text-align: center;*/
 }
 .headr-link {
   font-weight: 700;
@@ -365,9 +362,9 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .header-exile {
-    display: flex;
+    display: none;
   }
 }
 /*---------заголовок+кнопка+фонове зображення------*/
@@ -390,8 +387,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   .section-first {
-    padding: 112px;
-    width: 480px;
+    padding: 112px 0;
+    max-width: 1440px;
     height: 432px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -458,16 +455,16 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  width: 496px;
+  /*width: 496px;*/
   margin: 0 auto;
   margin-bottom: 48px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .main-first {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    width: 318px;
+    max-width: 320px;
     margin-bottom: 72px;
   }
 }
@@ -515,7 +512,7 @@ body {
   overflow: hidden;
 }
 .section-advantages {
-  padding: 120px 0px;
+  /*padding: 120px 0px;*/
 }
 .main-advantages {
   /*display: flex;*/
@@ -535,11 +532,14 @@ body {
   color: var(--black-text--);
   margin-bottom: 8px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .main-index {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+  }
+  .section-advantages {
+    padding-top: 96px;
   }
 }
 .main-sketchy {
@@ -547,7 +547,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .advantages-soc-icon {
     display: none;
   }
@@ -603,11 +603,14 @@ body {
 }
 .main-work {
   background-color: #f4f4fd;
-  padding: 120px 0px;
+  /*padding: 120px 0px;*/
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .main-two-section {
     display: none;
+  }
+  .main-work {
+    padding-top: 96px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -684,15 +687,16 @@ body {
 .people-soc-link:focus {
   background-color: #404bbf;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .main-people {
     display: flex;
     flex-direction: column;
-    width: 264px;
     justify-content: center;
     align-items: center;
-    padding-left: 82px;
     gap: 32px;
+  }
+  .main-work {
+    padding-bottom: 96px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -706,15 +710,15 @@ body {
 }
 /*---------наші спеціалісти------*/
 /*--------посилання на компанії-------*/
-.section-company {
+/*.section-company {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+}*/
 .company {
   display: flex;
   gap: 24px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .company {
     display: flex;
     gap: 24px;
@@ -724,8 +728,12 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .section-company {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .company {
     display: flex;
     flex-wrap: wrap;
@@ -768,13 +776,13 @@ body {
   overflow: hidden;
 }
 .portfolio-one {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  /*padding-top: 96px;
+  padding-bottom: 120px;*/
 }
 .portfolio-buttons {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 72px;*/
   gap: 24px;
 }
 .portfolio-button {
@@ -825,9 +833,9 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .images {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px 24px;*/
 }
 .index-sketchy {
   padding-top: 32px;
@@ -851,6 +859,31 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--gren-text--);
+}
+@media screen and (max-width: 479px) {
+  .portfolio-buttons {
+    display: flex;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px) / 3);
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 48px;
+  }
+  .portfolio-one {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .images-photo {
+    margin-bottom: 24px;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*---------підвал------*/
@@ -880,19 +913,20 @@ body {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   width: 264px;
-  margin-top: 16px;
+  margin: 0 auto;
+  /*margin-top: 16px;*/
 }
 .social {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
-  margin-left: 120px;
+  /*margin-left: 120px;*/
 }
 .footer-soc {
   display: flex;
   gap: 16px;
-  margin-left: 120px;
+  /*margin-left: 120px;*/
 }
 .footer-icon-one {
   width: 40px;
@@ -923,7 +957,7 @@ body {
 }
 
 .footer-form-telega {
-  margin-left: 80px;
+  /*margin-left: 80px;*/
 }
 .footer-subcribe {
   font-weight: 500;
@@ -972,7 +1006,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   border: none;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   padding-left: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -989,7 +1023,7 @@ body {
   transform: translateY(-50%);
   margin-right: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .footer {
     width: 100%;
   }
@@ -997,18 +1031,10 @@ body {
     width: 100%;
   }
   .div-container {
-    justify-content: center;
-    align-items: center;
-    padding-left: 80px;
-  }
-  .footer-floor {
     margin-bottom: 72px;
   }
   .social {
     margin-bottom: 16px;
-  }
-  .footer-soc {
-    margin-bottom: 72px;
   }
   .footer-submit {
     margin-top: 16px;
@@ -1016,8 +1042,27 @@ body {
   .footer-input {
     width: 100%;
   }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .social {
+    text-align: center;
+  }
+  .footer-soc {
+    justify-content: center;
+  }
+  .footer-subcribe {
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 16px;
+  }
+  .footer-form-telega {
+    text-align: center;
+  }
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 767px) {
   .footer {
     display: flex;
   }
@@ -1025,8 +1070,8 @@ body {
     display: flex;
   }
 }
-@media screen and (max-width: 1200px) {
-  .footer .container {
+/*@media screen and (max-width: 1200px) {
+  .footer.container {
     display: flex;
   }
 }
@@ -1058,7 +1103,7 @@ body {
   background-color: #fcfcfc;
   padding: 72px 24px 24px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal-window {
     width: 392px;
     height: 586px;

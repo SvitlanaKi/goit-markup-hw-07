@@ -21,9 +21,9 @@
 <body>
   <header class="header border">
     <div class="container header-container">
+      <a href="index.html" class="headr-logo link">
+        <span class="web">Web</span>studio</a>
       <nav class="header-navigation">
-        <a href="index.html" class="headr-logo link">
-          <span class="web">Web</span>studio</a>
         <ul class="header-list list">
           <li class="header-item">
             <a class="headr-link link open" href="./index.html">Studio</a>
@@ -36,6 +36,9 @@
           </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-button js-open-menu"><svg width="32" height="22">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg></button>
       <ul class="header-exile list">
         <li>
           <a class="header-mail link" href="info@devstudio.com">info@devstudio.com</a>
@@ -44,6 +47,64 @@
           <a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
       </ul>
+    </div>
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu-container">
+        <button type="button" class="mobile-close-button-menu js-close-menu">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg></button>
+        <ul class="mobile-list list">
+          <li class="mobile-item">
+            <a class="mobile-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-exile list">
+          <li class="mobile-tel-mail">
+            <a class="mobile-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-tel-mail">
+            <a class="mobile-mail link" href="info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <div class="mobile-icon">
+          <ul class="mobile-icon-up list">
+            <li class="mobile-people link">
+              <a class="mobile-people-icon" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-people link">
+              <a class="mobile-people-icon" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-people link">
+              <a class="mobile-people-icon" href=""><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-people link">
+              <a class="mobile-people-icon" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -268,6 +329,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
