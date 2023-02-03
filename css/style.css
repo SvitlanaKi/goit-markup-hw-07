@@ -208,11 +208,6 @@ body {
 .mobile-people-icon:hover {
   background-color: rgba(64, 75, 191, 1);
 }
-@media screen and (min-width: 767px) {
-  .mobile-menu-button {
-    display: none;
-  }
-}
 
 /*---------------мобільне меню-------------------*/
 .header {
@@ -363,10 +358,8 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  .header-exile {
-    display: none;
-  }
 }
+
 /*---------заголовок+кнопка+фонове зображення------*/
 .section-first {
   background-color: #2e2f42;
