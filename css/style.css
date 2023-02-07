@@ -54,6 +54,8 @@ ul {
 }
 img {
 	display: block;
+	width: 100%;
+	height: auto;
 }
 
 body {
@@ -824,7 +826,6 @@ body {
 	}
 
 	.images-photo {
-		width: 396px;
 		margin: 0 auto;
 		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 	}
@@ -1506,7 +1507,6 @@ body {
 		color: #ffffff;
 		cursor: pointer;
 		border: none;
-		/*margin-left: 20px;*/
 		padding-left: 24px;
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -1691,6 +1691,10 @@ body {
 		.section-first {
 			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
 		}
+	}
+	/*--------------------PORTFOLIO-----------*/
+	.portfolio-section {
+		padding-top: 96px;
 	}
 }
 
